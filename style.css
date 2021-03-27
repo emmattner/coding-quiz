@@ -1,0 +1,28 @@
+div#test{
+    border:#5AB029 3px solid;
+    padding:10px 40px 40px 40px;
+    background-color:#E5FCE3;
+    width:50%;}
+
+header {
+    margin: 30px;
+    background-color:rgba(255, 196, 0, 0.918);
+    padding-left: 30px;
+    justify-content: center;
+    
+
+}
+
+main {
+    margin: 30px;
+    background-color: orange;
+    display: block;
+    padding: 30px;
+    font-size: 15px;
+    justify-content: center;
+
+}
+
+.Answers{
+    list-style: decimal;
+}
