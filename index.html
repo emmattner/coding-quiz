@@ -5,23 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>CODING QUIZ CHALLENGE!</title>
+    <title>Emma's JavaScript Quiz!</title>
 </head>
 
 <body>
+    <!--HEADER-->
     <header>
-        <h1>CODING QUIZ CHALLENGE!</h1>
-        <div id="timer">Timer:</div>
-        <a href="#highscores" id="highscores-btn">View Highscores</a>
-    </header>    
-    <h2 id="test_status"></h2>
-    <div id="test"></div>
-    <script src="./script.js"></script>   
+    <div>
+        <!--HIGHSOCRE LINK-->
+        <a href="#highscores" class="highscores-btn" id="highscores-btn">View Highscores</a>
+       <!--COUNTDOWN TIMER-->
+        <div id="countdown-timer">Timer:</div>
+    </div>
+    <section id="section-title">
+        <h1>JAVASCRIPT QUIZ!</h1>
+        <p>Test your knowledge of JavaScript! Each right answer will add to your score whilst each wrong answer will result in a 5 second time penalty.</p>
+    <p>Goodluck!</p>
+    </section>
+    </header>
+    <!--PARAGRAPH-->
+    
+   <!--START BUTTON-->
+    <section id="startQuizBtn">
+        <button class="button" id="start-btn">Start Quiz!</button>
+    </section>
+   
+    <section id="quiz-section" class="hide">
+        <h2 id="test_status"></h2>
+        <div id="test"></div>
+        <script src="./script.js"></script> 
+    </section>
+    
+  
+    
 </body>
 </html>
 
 
-    
+<!-- <input type="button" id="start-quiz" value="Start Quiz!" on click="startQuiz"> -->
 
     <!-- </header> -->
     <!-- Main -->
@@ -29,43 +50,13 @@
     <section class="">
         <h1>CODING QUIZ CHALLENGE!</h1>
         <p>Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds</p>
-        <button onclick="myFunction()">Start Quiz</button>
+        
         <p id="demo"></p> -->
         <!-- <button type="button" id="start-button">Start Quiz!</button> -->
             
-    <!-- </section> -->
+<!--introduction container, include comments aboout "how to make work" -->
+    <!-- toggle -->  
 
 
 
-        <!-- <section>
-            <ul id="Questions">
-                <li></li>
-                <li>String values must be enclosed within _____ when being assigned to varibles.</li>
-                
-            </ul>
-            <ul id="AnswersQ1" class="AnswersQ1">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul id="AnswersQ2" class="AnswersQ2">
-                <li>Commas</li>
-                <li>Curly Brackets</li>
-                <li>Quotes</li>
-                <li>Parentheses</li>
-            </ul>
-            <ul id="Correct-Answers" class="Correct-answers">
-                <li>Parentheses</li>
-                <li></li> -->
-
-            <!-- </ul>
-        </section>
-
-    <section>
-
-    </section>
-    </main>
-  
-</body>
-</html>  -->
+ 

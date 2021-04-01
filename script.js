@@ -1,6 +1,6 @@
-// function startQuiz(event){
+// function startQuiz(event)
 //     event.preventDefault();
-//     var myTimer = setInterval (function(){      
+//     var myTimer = setInterval (function(){
 //     time = time -0.10
 //        },10);
 //     }
@@ -63,7 +63,7 @@
 //       return false;
 //     }
 //     get("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
-    
+
 //     question = questions[pos].question;
 //     chA = questions[pos].a;
 //     chB = questions[pos].b;
@@ -102,7 +102,7 @@
 // Add event listener to call renderQuestion on page load event
 // window.addEventListener("load", renderQuestion);
 
-// var button = 
+// var button =
 // document.createElement("button");
 // button.innerHTML = "Start Quiz";
 
@@ -116,7 +116,7 @@
 
 // });
 
-// var startQuizBtn = 
+// var startQuizBtn =
 
 // function QuizToStart(event){
 
@@ -148,20 +148,66 @@
 //         correctAnswers: "Long"
 //     },
 // ]
-
-
-// function startQuiz(event){
-//     event.preventDefault();
-//     var myTimer = setInterval (function(){
-//         time = time -0.10
-//     },10);
-// }
-
 // question.array.forEach(element => {
-    
+
 // });
 // var timerEl = documentQuerySelector("#timer")
 // pos is position of where the user in the test or which question they're up to
+
+function startQuiz(event){
+    event.preventDefault();
+    var myTimer = setInterval (function(){
+        time = time -0.10
+    },10);
+}
+
+// function startTimer(){
+//     var secondsLeft = 30;
+//     var myTimer = document.getElementById('timer')
+//     var timer = setInterval(countDown, 1000);
+//         secondsLeft = secondsLeft -0.05;
+//         secondsLeft = secondsLeft.toFixed(2);
+
+//         timerCount.textContent = 'Timer: $(secondsLeft) seconds 1'
+
+//         if (secondsLeft <= 0){
+//             clearInterval(myTimer)
+//         }
+//     } 50;
+
+// function startTimer(){
+//     console.log('timer suppose to go')
+//     var sec = 59;
+//     var timerDisplay= setInterval(function(){
+//         document.getElementById('timer').innerHTML='00:'+sec;
+//         sec--;
+//         if (sec < 0) {
+//             clearInterval(timerDisplay);
+//             alert("Time is up!")
+//         }
+//     }, 1000);
+// }
+
+
+
+var timeLeft = 30;
+var elem = document.getElementById('countdown-timer');
+var timerId = setInterval(countdown, 1000);
+
+function countdown() {
+    if (timeLeft == -1) {
+        clearTimeout(timerId);
+    } else {
+        elem.innerHTML = timeLeft + ' seconds remaining';
+        timeLeft--;
+    }
+}
+
+
+
+
+
+
 var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
 // this is a multidimensional array with 4 inner array elements with 5 elements inside them
 var questions = [
@@ -180,21 +226,21 @@ var questions = [
       answer: "C"
     },
   {
-      question: "What is 16 / 4?",
-      a: "4",
-      b: "6",
-      c: "3",
+      question: "Commonly used data types DO NOT include:",
+      a: "Alerts",
+      b: "Booleans",
+      c: "Strings",
       answer: "A"
     },
   {
-      question: "What is 8 x 12?",
-      a: "88",
-      b: "112",
-      c: "96",
+      question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+      a: "Terminal/Bash",
+      b: "For loop",
+      c: "Console.log",
       answer: "C"
     }
   ];
-// this get function is short for the getElementById function  
+// this get function is short for the getElementById function
 function get(x){
   return document.getElementById(x);
 }
@@ -203,7 +249,8 @@ function renderQuestion(){
   test = get("test");
   if(pos >= questions.length){
     test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
-    get("test_status").innerHTML = "Test completed";
+    get("test_status").innerHTML = "Test completed"
+    
     // resets the variable to allow users to restart the test
     pos = 0;
     correct = 0;
@@ -211,7 +258,7 @@ function renderQuestion(){
     return false;
   }
   get("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
-  
+
   question = questions[pos].question;
   chA = questions[pos].a;
   chB = questions[pos].b;
@@ -245,3 +292,5 @@ function checkAnswer(){
 }
 // Add event listener to call renderQuestion on page load event
 window.addEventListener("load", renderQuestion);
+
+
