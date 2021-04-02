@@ -11,52 +11,40 @@
 <body>
     <!--HEADER-->
     <header>
-    <div>
-        <!--HIGHSOCRE LINK-->
-        <a href="#highscores" class="highscores-btn" id="highscores-btn">View Highscores</a>
+        <div>
+            <!--HIGHSOCRE LINK-->
+            <a href="#highscores" class="highscores-btn" id="highscores-btn">View Highscores</a>
        <!--COUNTDOWN TIMER-->
-        <div id="countdown-timer">Timer:</div>
-    </div>
-    <section id="section-title">
-        <h1>JAVASCRIPT QUIZ!</h1>
-        <p>Test your knowledge of JavaScript! Each right answer will add to your score whilst each wrong answer will result in a 5 second time penalty.</p>
-    <p>Goodluck!</p>
-    </section>
+            <div id="countdown-timer">Timer:</div>
+         </div>
+        <section id="section-title">
+            <h1>JAVASCRIPT QUIZ!</h1>
+            <p id="section-paragraph">Test your knowledge of JavaScript! Each right answer will add to your score whilst each wrong answer will result in a 5 second time penalty.</p><br>
+            <p>Goodluck!</p>
+        </section>
+      <!--START BUTTON-->
+        <section id="startQuizBtn">
+            <button class="button" id="start-btn">Start Quiz!</button>
+        </section>
     </header>
-    <!--PARAGRAPH-->
-    
-   <!--START BUTTON-->
-    <section id="startQuizBtn">
-        <button class="button" id="start-btn">Start Quiz!</button>
-    </section>
-   
-    <section id="quiz-section" class="hide">
+
+    <!-- QUIZ SECTION -->
+    <section id="quiz-section" style="display: ">
         <h2 id="test_status"></h2>
         <div id="test"></div>
-        <script src="./script.js"></script> 
+    </section>
+
+    <!-- Highscores Section -->
+    <section id='leaderboard' class='hide'>
+        <h4>Highscores</h4>
+        <div id='saved-initials'></div>
+        <div id='saved-scores'></div>
     </section>
     
-  
     
+  
+    <script src="./script.js"></script> 
 </body>
 </html>
 
 
-<!-- <input type="button" id="start-quiz" value="Start Quiz!" on click="startQuiz"> -->
-
-    <!-- </header> -->
-    <!-- Main -->
-    <!-- <main>
-    <section class="">
-        <h1>CODING QUIZ CHALLENGE!</h1>
-        <p>Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds</p>
-        
-        <p id="demo"></p> -->
-        <!-- <button type="button" id="start-button">Start Quiz!</button> -->
-            
-<!--introduction container, include comments aboout "how to make work" -->
-    <!-- toggle -->  
-
-
-
- 
