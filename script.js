@@ -98,7 +98,7 @@ function renderQuestion(){
   if(pos >= questions.length){
     test.innerHTML = `<h2>You got ${correct} of ${questions.length} questions correct</h2>
                         <input id="highscoreName"></input>
-                        <button id="highScoreButton"></button>`;
+                        <button class="button" id="highScoreButton"></button>`;
     get("test_status").innerHTML = "Test completed"
     clearInterval(timerInterval);
     score = secondsLeft;
