@@ -1,3 +1,4 @@
+
 ## Coding Quiz
 This coding quiz was created to test your knowledge on JavaScript. 
 
@@ -12,3 +13,5 @@ I faced a lot of challenges this week with writing this code from scratch such a
 
 
 ## Images
+<img width="1435" alt="Coding-quiz" src="https://user-images.githubusercontent.com/78684306/113814183-6b969100-97b0-11eb-9aa0-ae00907ffe4a.png"><img width="1432" alt="Coding-quiz2" src="https://user-images.githubusercontent.com/78684306/113814260-810bbb00-97b0-11eb-92a1-b893ca490da7.png">
+<img width="1435" alt="Coding-quiz3" src="https://user-images.githubusercontent.com/78684306/113814270-86690580-97b0-11eb-9770-c607e77b5589.png">
